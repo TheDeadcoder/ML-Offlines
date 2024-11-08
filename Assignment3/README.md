@@ -1,4 +1,11 @@
-# Neural Network Model
+## Course: CSE-472 (Machine Learning Sessional)
+---
+## Assignment-3 Report
+- **Name: Nazmus Sakib**
+- **ID : 1905061**
+---
+
+## Neural Network Model
 
 ## Introduction
 
