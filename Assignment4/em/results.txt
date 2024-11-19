@@ -1,0 +1,84 @@
+Mean of data: 3.797
+Variance of data: 5.961790999999999
+Iteration 1:
+    lambda1 = 2.602871821758873
+    lambda2 = 6.603472128949749
+    pi = 0.7015127514501405
+    Log-Likelihood = -2667.044155508389
+Iteration 10:
+    lambda1 = 2.5145307062832853
+    lambda2 = 5.635224458394809
+    pi = 0.5890435282702858
+    Log-Likelihood = -2259.706498856036
+Iteration 20:
+    lambda1 = 2.249546828499978
+    lambda2 = 5.346956971684969
+    pi = 0.5004041764037055
+    Log-Likelihood = -2253.867631838739
+Iteration 30:
+    lambda1 = 2.0686788240191465
+    lambda2 = 5.168292199176662
+    pi = 0.4424074983567832
+    Log-Likelihood = -2251.281716185872
+Iteration 40:
+    lambda1 = 1.9534529410850863
+    lambda2 = 5.061010648316657
+    pi = 0.4067537170348242
+    Log-Likelihood = -2250.2627930311005
+Iteration 50:
+    lambda1 = 1.8830253769698573
+    lambda2 = 4.997843205621566
+    pi = 0.3855259831170821
+    Log-Likelihood = -2249.8892337262687
+Iteration 60:
+    lambda1 = 1.8410397649584616
+    lambda2 = 4.961043236664223
+    pi = 0.37309036583469574
+    Log-Likelihood = -2249.758025253051
+Iteration 70:
+    lambda1 = 1.816379466148545
+    lambda2 = 4.939725969679466
+    pi = 0.36586589684737925
+    Log-Likelihood = -2249.7130835725775
+Iteration 80:
+    lambda1 = 1.8020215780749012
+    lambda2 = 4.927415577193435
+    pi = 0.3616873832586389
+    Log-Likelihood = -2249.69791357321
+Iteration 90:
+    lambda1 = 1.7937046785403883
+    lambda2 = 4.9203186909632475
+    pi = 0.35927642059429377
+    Log-Likelihood = -2249.6928361487135
+Iteration 100:
+    lambda1 = 1.7889013369318931
+    lambda2 = 4.916231305852915
+    pi = 0.3578871807502512
+    Log-Likelihood = -2249.6911450182492
+Iteration 110:
+    lambda1 = 1.7861319709143941
+    lambda2 = 4.9138784998943885
+    pi = 0.357087279786262
+    Log-Likelihood = -2249.690583341974
+Iteration 120:
+    lambda1 = 1.7845368728910134
+    lambda2 = 4.912524584914439
+    pi = 0.3566269076526616
+    Log-Likelihood = -2249.6903970947615
+Iteration 130:
+    lambda1 = 1.7836186529636204
+    lambda2 = 4.911745617573153
+    pi = 0.3563620115759274
+    Log-Likelihood = -2249.6903353944017
+Iteration 140:
+    lambda1 = 1.7830902521916978
+    lambda2 = 4.911297488935367
+    pi = 0.3562096129204356
+    Log-Likelihood = -2249.6903149651475
+Converged at iteration 142
+
+Estimated Parameters:
+Mean number of children in families with family planning advice (lambda1): 1.7830517507388481
+Mean number of children in families without family planning advice (lambda2): 4.911264840367655
+Proportion of families with family planning advice (pi): 0.35619850964176886
+Proportion of families without family planning advice: 0.6438014903582312
