@@ -23,7 +23,7 @@ The central problem addressed in the paper is that traditional language model pr
 <br>
 
 <p align="center">
-  <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/undesired_token.png" width="80%" />
+  <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/und.png" width="90%" />
 </p>
 
 <br>
@@ -53,7 +53,7 @@ The central problem addressed in the paper is that traditional language model pr
     <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/token_dynamics.png" width="80%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/token_dyn.png" width="100%" />
     </p>
 
     <br>
@@ -70,7 +70,7 @@ The central problem addressed in the paper is that traditional language model pr
     <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/slm_model.png" width="80%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/slm_1.png" width="100%" />
     </p>
 
     <br>
@@ -94,7 +94,7 @@ The central problem addressed in the paper is that traditional language model pr
   <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math-2.png" width="80%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/m1.png" width="90%" />
     </p>
 
   <br>
@@ -106,7 +106,7 @@ The central problem addressed in the paper is that traditional language model pr
   <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/general_task.png" width="80%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/pilo.png" width="100%" />
     </p>
 
   <br>
@@ -118,7 +118,7 @@ The central problem addressed in the paper is that traditional language model pr
   <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/efficient.png" width="90%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/un.png" width="100%" />
     </p>
 
   <br>
@@ -143,7 +143,7 @@ The central problem addressed in the paper is that traditional language model pr
   <br>
 
     <p align="center">
-      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math.png" width="80%" />
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/m4.png" width="100%" />
     </p>
 
   <br>
