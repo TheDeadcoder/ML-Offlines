@@ -125,7 +125,7 @@ The central problem addressed in the paper is that traditional language model pr
 
 - **Ablation Studies**:
   - **Effect of Token Selection Ratio**: selecting approximately **60-70% of tokens** (based on excess loss scores) provided the optimal balance between efficiency and performance.
-  - **Correlation with Downstream Performance**: Tokens selected by SLM had a stronger correlation with downstream task performance compared to unselected tokens.
+  
 
 ## Insights, Application & Future direction:
 
