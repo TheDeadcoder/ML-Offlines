@@ -12,17 +12,24 @@
 
 The central problem addressed in the paper is that traditional language model pretraining uniformly applies a next-token prediction loss to all tokens in the training corpus. This approach assumes that all tokens are equally important for model learning, but the authors challenge this assumption. They argue that:
 
-- **Noisy and Ineffective Tokens**:Pretraining corpora, even after extensive filtering, contain noisy and irrelevant tokens. Training on these tokens can waste computational resources and reduce the model's ability to focus on learning meaningful patterns.
+- **Noisy and Ineffective Tokens**: Pretraining corpora, even after extensive filtering, contain noisy and irrelevant tokens. Training on these tokens can waste computational resources and reduce the model's ability to focus on learning meaningful patterns.
 
-- **Token Dynamics**:Not all tokens contribute equally to model training. The study categorizes tokens based on their training loss trajectories, such as:
+- **Token Dynamics**: Not all tokens contribute equally to model training. The study categorizes tokens based on their training loss trajectories, such as:
 
-  - **Easy Tokens**:Tokens that are quickly learned and contribute little to further training.
-  - **Hard Tokens**:Tokens that resist convergence and show fluctuating or high loss throughout training.
-  - **Ambiguous Tokens**:Tokens that are noisy or poorly aligned with the desired learning objectives.
+  - **Easy Tokens**: Tokens that are quickly learned and contribute little to further training.
+  - **Hard Tokens**: Tokens that resist convergence and show fluctuating or high loss throughout training.
+  - **Ambiguous Tokens**: Tokens that are noisy or poorly aligned with the desired learning objectives.
 
-      ![token-category](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/undesired_token.png)
+<br>
+
+<p align="center">
+  <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/undesired_token.png" width="80%" />
+</p>
+
+<br>
 
 - **Inefficiency in Uniform Loss Application**: Applying the same loss function to all tokens leads to inefficient training, as valuable compute is spent on unimportant or already-learned tokens.
+
 
 ## Importance:
 
@@ -43,7 +50,13 @@ The central problem addressed in the paper is that traditional language model pr
     - **L→H (Low to High)**: Tokens whose loss increases over time, suggesting emerging challenges.
     - **H→L (High to Low)**:Tokens with decreasing loss, showing effective learning.
     - **L→L (Low to Low)**: Tokens with consistently low loss, indicating they are easily learned or redundant.
-  - ![Token-dynamics](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/token_dynamics.png)
+    <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/token_dynamics.png" width="80%" />
+    </p>
+
+    <br>
   - This analysis reveals that a significant portion of tokens either remain challenging or are quickly learned, implying that uniform training across all tokens is inefficient.
 
 - **Introduction of Selective Language Modeling (SLM):**
@@ -53,7 +66,14 @@ The central problem addressed in the paper is that traditional language model pr
     - Reference Model Training
     - Token Scoring: Tokens are scored based on their excess loss, defined as the difference between the current training model’s loss.
 
-    - Selective Training: The language model is trained only on tokens that fall within the top k% of excess loss scores. The SLM objective modifies the standard cross-entropy loss to focus on selected tokens. ![training-process](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/slm_model.png)
+    - Selective Training: The language model is trained only on tokens that fall within the top k% of excess loss scores. The SLM objective modifies the standard cross-entropy loss to focus on selected tokens. 
+    <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/slm_model.png" width="80%" />
+    </p>
+
+    <br>
 
 - **Development of the Rho-1 Language Model**:
 
@@ -71,19 +91,37 @@ The central problem addressed in the paper is that traditional language model pr
     - Rho-1 models pretrained on the OpenWebMath corpus showed significant improvements in **few-shot reasoning** tasks.
     - These results match the performance of DeepSeekMath models, which require up to **10x** more training tokens.
   - **Efficiency Gains**: Rho-1 models reached baseline performance up to **10x faster** than traditional causal language modeling (CLM) baselines.
-  - ![math](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math-2.png)
+  <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math-2.png" width="80%" />
+    </p>
+
+  <br>
 
 - **General Pretraining Results**: By applying SLM to a general corpus of 80B tokens, Rho-1 achieved significant improvements across 15 diverse benchmarks:
 
   - **Average improvement:** 6.8%
   - Notable gains were observed in code-related and **mathematical tasks**, exceeding **10%** improvements in these areas.
-  - ![General](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/general_task.png)
+  <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/general_task.png" width="80%" />
+    </p>
+
+  <br>
 
 - **Self-Reference Experiments**:
 
   - Even using a subset of the OpenWebMath corpus, SLM achieved a **2.4%** improvement in downstream task accuracy.
   - By combining two scoring functions (reference model loss and token entropy), the method improved performance by 3.3% while reducing token usage by 40%.
-  - ![self-reference](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/efficient.png)
+  <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/efficient.png" width="90%" />
+    </p>
+
+  <br>
 
 - **Ablation Studies**:
   - **Effect of Token Selection Ratio**: selecting approximately **60-70% of tokens** (based on excess loss scores) provided the optimal balance between efficiency and performance.
@@ -102,7 +140,13 @@ The central problem addressed in the paper is that traditional language model pr
 ### Application-fields
 
 - **Mathematical Reasoning**: RHO-1 shows exceptional improvements on tasks like **MATH** and **GSM8k**, making it a promising approach for developing advanced models for scientific computation and educational tools.
-  ![math-1](https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math.png)
+  <br>
+
+    <p align="center">
+      <img src="https://ycjfhirkrwhkotpadfln.supabase.co/storage/v1/object/public/statics/14/math.png" width="80%" />
+    </p>
+
+  <br>
 - **General Language Model Training**: SLM can be applied to general pretraining tasks, such as creating **data-efficient general-purpose language models** for NLP applications like chatbots, search engines, and document summarization.
 - **Data Optimization in Low-Resource Settings**: SLM’s ability to work with smaller token subsets makes it suitable for organizations with **limited access to high-quality datasets or computational resources**.
 - **Token-Based Filtering in Large Datasets**: SLM’s methodology can assist in **curating cleaner datasets** for training, removing noise from data pipelines while retaining meaningful information.
