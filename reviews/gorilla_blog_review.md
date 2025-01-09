@@ -46,7 +46,7 @@ The blog is written in a clear and concise manner, making complex ideas from the
 
 While the blog provides an accurate summary of the paper, it lacks a critical perspective. The following areas could have been improved:
 - **Challenges**: The blog does not mention the challenges faced during Gorilla's development, such as reliance on retriever accuracy and the potential performance degradation with suboptimal retrievers.
-- **Future Scope**: The blog does not discuss how Gorilla could be extended beyond machine learning APIs to general-purpose APIs or other domains, as hinted in the paper.
+
 
 ---
 
